@@ -1,22 +1,26 @@
 #@T4ya (YESID ORTIZ)
 
-#1. Dados dos números enteros, retornar el producto si este es menor o igual a 100, de lo contrario, retornar la suma
+#Exercise 1: Calculate the multiplication and sum of two numbers:
+
+#Given two integer numbers return their product only if the product is equal to or lower than 1000, else return their sum.
 
 
-def ej1():
+def product_or_sum():
 
     #Inputs
+
     while True:
         try:
-            num1 = int(input("Ingrese el primer número: "))
-            num2 = int(input("Ingrese el segundo número: "))
+            num1 = int(input("Enter the first number: "))
+            num2 = int(input("Enter the second number: "))
 
         except:
-            print ("Error, ingrese números enteros")
+            print ("Error, please enter integer numbers only")
         break
 
     if (num1 * num2) <= 100:
-        print ("El producto de los dos números es: ", num1 * num2)
+        print ("The product of the numbers is: ", num1 * num2)
     else:
-        print ("La suma de ambos números es: ", num1 + num2)
-ej1()
+        print ("The sum of the number is: ", num1 + num2)
+
+product_or_sum()
